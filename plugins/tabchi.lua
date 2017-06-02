@@ -13,7 +13,7 @@ if msg.media then
 	  local hash = ('bot:pm') 
     local pm = redis:get(hash) 
     if not pm then 
-	 return reply_msg(msg.id,'ادی گلم پیوی', ok_cb, false)
+	 return reply_msg(msg.id,'ادي گلم پيوي', ok_cb, false)
 	 else
 	  return reply_msg(msg.id,pm, ok_cb, false)
 	  end
@@ -167,11 +167,11 @@ end
 function run(msg,matches)
 if matches[1] == "settext" then 
 if not is_sudo(msg) then 
-return 'شما سودو نیستید' 
+return 'شما سودو نيستيد' 
 end 
 local pm = matches[2] 
 redis:set('bot:pm',pm) 
-return 'متن پاسخ گویی ثبت شد' 
+return 'متن پاسخ گويي ثبت شد' 
 end 
 
 if matches[1] == "pm" and is_sudo(msg) then
@@ -180,64 +180,64 @@ local hash = ('bot:pm')
     if not pm then 
     return ' ثبت نشده' 
     else 
-	   return 'پیغام کنونی:\n\n'..pm
+	   return 'پيغام کنوني:\n\n'..pm
     end
 end
 if matches[1]== "help" and is_sudo(msg) then
 local text =[[
-🛑Brodcast Option:
-🔰!pm [Id] [Text]🔰
-ارسال پیام به ایدی موردنظر
-🔰!bcpv [text]🔰
-ارسال پیغام همگانی به پیوی
-🔰!bcgp [text]🔰
-ارسال پیغام همگانی به گروه ها
-🔰!bcsgp [text]🔰
-ارسال پیغام همگانی به سوپرگروها
-🔰!bc [text]🔰
-ارسال پیغام همگانی
-🔰!fwdpv {reply on msg}🔰
-ارسال به پیوی کاربران
-🔰!fwdgp {reply on msg}🔰
+??Brodcast Option:
+??!pm [Id] [Text]??
+ارسال پيام به ايدي موردنظر
+??!bcpv [text]??
+ارسال پيغام همگاني به پيوي
+??!bcgp [text]??
+ارسال پيغام همگاني به گروه ها
+??!bcsgp [text]??
+ارسال پيغام همگاني به سوپرگروها
+??!bc [text]??
+ارسال پيغام همگاني
+??!fwdpv {reply on msg}??
+ارسال به پيوي کاربران
+??!fwdgp {reply on msg}??
 ارسال به گروه ها
-🔰!fwdsgp {reply on msg}🔰
+??!fwdsgp {reply on msg}??
 ارسال به سوپرگروها
-🔰!fwdall {reply on msg}🔰
-فوروارد همگانی 
+??!fwdall {reply on msg}??
+فوروارد همگاني 
 ---------------------------------
-🛑User Option:
-🔰!block [Id]🔰
+??User Option:
+??!block [Id]??
 بلاک کردن فرد مورد نظر
-🔰!unblock [id]🔰
+??!unblock [id]??
 انبلاک کردن فرد مور نظر
 ---------------------------------
-🛑Contacts Option:
-🔰!addcontact [phone] [FirstName][LastName]🔰
-اضافه کردن یک کانتکت
-🔰!delcontact [phone] [FirstName][LastName]🔰
-حذف کردن یک کانتکت
-🔰!sendcontact [phone] [FirstName][LastName]🔰
-ارسال یک کانتکت
-🔰!contactlist🔰
- دریافت لیست کانتکت ها
+??Contacts Option:
+??!addcontact [phone] [FirstName][LastName]??
+اضافه کردن يک کانتکت
+??!delcontact [phone] [FirstName][LastName]??
+حذف کردن يک کانتکت
+??!sendcontact [phone] [FirstName][LastName]??
+ارسال يک کانتکت
+??!contactlist??
+ دريافت ليست کانتکت ها
 ---------------------------------
-🛑Robot Advanced Option:
-🔰!markread [on]/[off]🔰
-روشن و خاموش کردن تیک مارک رید
-🔰!setphoto {on reply photo}🔰
-ست کردن پروفایل ربات
-🔰!stats🔰
-دریافت آمار ربات
-🔰!addmember🔰
-اضافه کردن کانتکت های ربات به گروه
-🔰!echo [text]🔰
+??Robot Advanced Option:
+??!markread [on]/[off]??
+روشن و خاموش کردن تيک مارک ريد
+??!setphoto {on reply photo}??
+ست کردن پروفايل ربات
+??!stats??
+دريافت آمار ربات
+??!addmember??
+اضافه کردن کانتکت هاي ربات به گروه
+??!echo [text]??
 برگرداندن نوشته
-🔰!export link🔰
-دریافت لینک های ذخیره شده
-🔰!setpm [text]🔰
-تنظیم پیام ادشدن کانتکت
-🔰!reload🔰
-ریلود کردن ربات
+??!export link??
+دريافت لينک هاي ذخيره شده
+??!setpm [text]??
+تنظيم پيام ادشدن کانتکت
+??!reload??
+ريلود کردن ربات
 ]]
 return text
 end
@@ -419,5 +419,4 @@ patterns = {
 run = run,
 pre_process = pre_process
 }
---@LuaError
---@Tele_Sudo
+--@FUCKSOON
