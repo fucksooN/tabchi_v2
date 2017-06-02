@@ -71,6 +71,6 @@ sudo tmux new-session -s script "bash steady.sh -t"
 
 
 ## 🇮🇷 تهیه شده توسط 🇮🇷
-[LuaError](https://telegram.me/FUCKSOON)
+[FUCKSOON](https://telegram.me/FUCKSOON)
 
 
